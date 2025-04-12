@@ -1,0 +1,101 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 96%;
+  max-width: 50em;
+  margin: 2em auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.container .options{
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  margin: 0.5em 0;
+}
+
+.container .options .timeOption{
+  background-color: #2978B5;
+  padding: 0.25em 0.5em;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+.container .timeInput{
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  margin: 1em 0em;
+  width: 100%;
+}
+
+.container .timeInput > div{
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.container .timeInput > div input{
+  height: 3em;
+  width: 6em;
+  padding: 0 1em;
+  border: 1px solid white;
+}
+
+.container > button{
+  padding: 1em 2em;
+  cursor: pointer;
+  background-color: #2978B5;
+  border: 1px solid black;
+  font-weight: 700;
+}
+
+.container .result{
+  width: 100%;
+  margin: 1.5em 0;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  border: 1px solid white;
+  padding: 0.5em 1em;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.container .result svg{
+  font-size: 1.5em;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+} */
