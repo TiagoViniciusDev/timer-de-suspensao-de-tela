@@ -21,7 +21,7 @@ function App() {
 
     //Verificando se a hora foi definida
     if(timeInputHours == "0" && timeInputMinutes == "0"){
-      return
+      return alert("Informe o tempo")
     }
 
     const now = new Date();
@@ -48,7 +48,8 @@ function App() {
       await navigator.clipboard.writeText(`schtasks /create /tn "LockScreenTask" /tr "rundll32.exe user32.dll,LockWorkStation" /sc once /st ${suspensionTime} /f`);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000); // reseta após 2s
-      console.log('Texto copiado via Clipboard API');
+      console.log('código copiado');
+      alert("código copiado")
     } catch (err) {
       console.error('Falha ao copiar:', err);
     }
