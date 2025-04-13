@@ -1,12 +1,31 @@
-# React + Vite
+## Para que serve o projeto ?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto gera um comando que, quando executado no Prompt de Comando do Windows, suspende a sessão após o período de tempo selecionado. Após a suspensão, será necessário informar a senha de acesso do computador.
 
-Currently, two official plugins are available:
+A ideia surgiu a partir de um pedido de um amigo que queria limitar o tempo que o irmão dele passa jogando no computador.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como utilizar
 
-## Expanding the ESLint configuration
+### Selecione em quanto tempo deseja suspender a tela
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![selecionarOTempo](public/selecioneOTempo.png)
+
+### Clique no botão para gerar o código
+
+![Gerar código](public/gerarCodigo.png)
+
+### Copie o código
+
+![Copiar código](public/codigo.png)
+
+### Abra o terminal do seu computador
+
+![abrir o terminal](public/terminal.png)
+
+### Cole o codigo e pressione a tecla "Enter"
+
+![codigoNoTerminal](public/codigoNoTerminal.png)
+
+### Se tudo ocorrer corretamente, uma mensagem de êxito aparecerá no terminal:
+
+![sucesso](public/sucesso.png)

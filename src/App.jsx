@@ -73,19 +73,21 @@ function App() {
         </div>
       </div>
 
-      <div className='timeInput'>
-        <div>
-          <input type="number"  value={timeInputHours} onChange={(e) => {setTimeInputHours(e.target.value)}}/>
-          <span>Horas</span>
+      <form onSubmit={(e) => {e.preventDefault(); defineTimeToSuspend()}}>
+        <div className='timeInput'>
+          <div>
+            <input type="number"  value={timeInputHours} onChange={(e) => {setTimeInputHours(e.target.value)}}/>
+            <span>Horas</span>
+          </div>
+          <span>e</span>
+          <div>
+            <input type="number" max={60}  value={timeInputMinutes} onChange={(e) => {setTimeInputMinutes(e.target.value)}}/>
+            <span>minutos</span>
+          </div>
         </div>
-        <span>e</span>
-        <div>
-          <input type="number"  value={timeInputMinutes} onChange={(e) => {setTimeInputMinutes(e.target.value)}}/>
-          <span>minutos</span>
-        </div>
-      </div>
 
-      <button onClick={defineTimeToSuspend}>Gerar código</button>
+        <button type='submit'>Gerar código</button>
+      </form>
 
       {suspensionTime !== undefined && suspensionTime !== "00:00" ? (
         <div className='result' onClick={handleCopy}>

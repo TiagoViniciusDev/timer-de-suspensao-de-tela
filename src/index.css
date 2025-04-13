@@ -65,7 +65,7 @@
   border: 1px solid white;
 }
 
-.container > button{
+.container form button{
   padding: 1em 2em;
   cursor: pointer;
   background-color: #2978B5;
