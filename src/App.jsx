@@ -31,15 +31,13 @@ function App() {
     hours = Number(hours) + Number(timeInputHours)
     minutes = Number(minutes) + Number(timeInputMinutes)
 
-    if(hours < 10){
-      hours = `0${hours}`
+    //Verificando se passa de 60 minutos
+    if(minutes > 60){
+      hours = hours + 1
+      minutes = minutes - 60
     }
 
-    if(minutes < 10){
-      minutes = `0${minutes}`
-    }
-
-    setSuspensionTime(`${hours}:${minutes}`)
+    setSuspensionTime(`${hours < 10 ? "0" : ""}${hours}:${minutes < 10 ? "0" : ""}${minutes}`)
   }
 
   //COPIA
